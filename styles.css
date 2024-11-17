@@ -121,6 +121,7 @@ a {
 .skills {
     padding: 3rem 2rem;
     background-color: #fff;
+    text-align: center;
 }
 
 .skills-content {
@@ -130,19 +131,38 @@ a {
 }
 
 .skill-card {
-    width: 200px;
+    position: relative;
+    width: 150px;
+    height: 150px;
     text-align: center;
 }
 
 .circle {
-    width: 100px;
-    height: 100px;
+    width: 100%;
+    height: 100%;
     border-radius: 50%;
-    background-color: #007BFF;
-    margin: 0 auto;
-    line-height: 100px;
-    color: white;
+    border: 10px solid #e4e4e4; /* Light gray background for the circle */
+    position: relative;
+    background: conic-gradient(#007BFF 0% 0%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 1s ease;
+}
+
+.circle:before {
+    content: '';
+    width: 70%;
+    height: 70%;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.circle p {
+    position: absolute;
     font-size: 1.5rem;
+    color: #007BFF;
 }
 
 .download-cv a {
@@ -204,22 +224,22 @@ a {
 }
 
 .form-group textarea {
-    height: 150px;
+    height: 120px;
+    resize: vertical;
 }
 
 .btn-submit {
-    padding: 1rem 2rem;
-    background-color: #007BFF;
+    padding: 0.8rem 2rem;
+    background-color: #28a745;
     color: white;
     font-size: 1.2rem;
     border-radius: 5px;
-    border: none;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
 .btn-submit:hover {
-    background-color: #0056b3;
+    background-color: #218838;
 }
 
 /* Footer */
