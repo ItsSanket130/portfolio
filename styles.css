@@ -3,204 +3,230 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    background-color: #f4f4f4;
 }
 
-h1, h2, p {
+h1, h2, h3, p {
     margin: 0;
+    padding: 0;
 }
 
 a {
     text-decoration: none;
+    color: inherit;
 }
 
 /* Header */
 .header {
-    background-color: white;
-    padding: 20px 10%;
+    background-color: #333;
+    padding: 1rem 2rem;
+    color: #fff;
+}
+
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.navbar ul {
+.nav-links {
     list-style: none;
     display: flex;
-    gap: 20px;
 }
 
-.nav-links a {
-    color: black;
-    font-weight: bold;
+.nav-links li {
+    margin: 0 1rem;
+}
+
+.nav-links a, .btn-contact {
+    color: white;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 5px;
 }
 
 .btn-contact {
-    background-color: #ffb100;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 20px;
-    font-weight: bold;
+    background-color: #007BFF;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.btn-contact:hover {
+    background-color: #0056b3;
 }
 
 /* Hero Section */
 .hero {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 50px 10%;
+    padding: 3rem 2rem;
+    background-color: #fff;
 }
 
 .hero-content {
-    max-width: 600px;
-}
-
-.hero-content h1 {
-    font-size: 36px;
-    color: #4b42f5;
+    width: 60%;
 }
 
 .hero-content h1 span {
-    color: #ffb100;
-}
-
-.hero-content p {
-    margin: 20px 0;
-    color: #444;
-}
-
-.btn-hire {
-    background-color: #ffb100;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 20px;
-    font-weight: bold;
+    color: #007BFF;
 }
 
 .hero-image img {
-    width: 300px;
-    border-radius: 10px;
+    width: 40%;
+    border-radius: 50%;
+}
+
+.btn-hire {
+    padding: 0.8rem 2rem;
+    background-color: #007BFF;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn-hire:hover {
+    background-color: #0056b3;
 }
 
 /* Services Section */
 .services {
     text-align: center;
-    padding: 50px 10%;
+    padding: 3rem 2rem;
+    background-color: #e9ecef;
 }
 
 .service-cards {
     display: flex;
     justify-content: center;
-    gap: 40px;
-    margin-top: 20px;
+    gap: 2rem;
 }
 
 .service {
-    background-color: #ffffff;
-    border: 1px solid #e0e0e0;
-    padding: 20px;
+    background-color: white;
+    padding: 2rem;
     border-radius: 10px;
-    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 200px;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    text-align: center;
 }
 
 .service img {
     width: 50px;
     height: 50px;
-    margin-bottom: 10px;
-}
-
-.service h3 {
-    font-size: 20px;
-    margin-bottom: 5px;
-    color: #4b42f5;
-}
-
-.service p {
-    font-size: 14px;
-    color: #ffb100;
-    cursor: pointer;
-}
-
-.service:hover {
-    transform: translateY(-10px);
+    margin-bottom: 1rem;
 }
 
 /* Skills Section */
 .skills {
-    background-color: #f3f3fa;
-    padding: 50px 10%;
-    text-align: center;
+    padding: 3rem 2rem;
+    background-color: #fff;
 }
 
 .skills-content {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin-top: 20px;
+    justify-content: space-between;
+    gap: 2rem;
 }
 
 .skill-card {
-    background-color: white;
-    border-radius: 10px;
-    padding: 20px;
-    width: 150px;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    width: 200px;
     text-align: center;
 }
 
 .circle {
     width: 100px;
     height: 100px;
-    margin: 0 auto;
     border-radius: 50%;
-    border: 6px solid #ffb100;
-    position: relative;
-}
-
-.circle::before {
-    content: attr(data-percent) '%';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 20px;
-    color: #444;
-}
-
-.skill-card p {
-    font-size: 14px;
-    color: #4b42f5;
-    margin-top: 10px;
-}
-
-/* Download CV Button */
-.download-cv {
-    margin-top: 30px;
+    background-color: #007BFF;
+    margin: 0 auto;
+    line-height: 100px;
+    color: white;
+    font-size: 1.5rem;
 }
 
 .download-cv a {
-    text-decoration: none;
-    background-color: #ffb100;
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1.5rem;
+    background-color: #28a745;
     color: white;
-    padding: 10px 20px;
-    border-radius: 20px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
+    border-radius: 5px;
 }
 
-.download-cv a:hover {
-    background-color: #e09a00;
+/* Contact Section */
+.contact {
+    padding: 3rem 2rem;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.contact h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.contact p {
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.form-group label {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.form-group textarea {
+    height: 150px;
+}
+
+.btn-submit {
+    padding: 1rem 2rem;
+    background-color: #007BFF;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: #0056b3;
 }
 
 /* Footer */
 .footer {
     text-align: center;
-    padding: 20px;
-    background-color: #4b42f5;
+    padding: 1rem;
+    background-color: #333;
     color: white;
+    margin-top: 3rem;
 }
