@@ -1,163 +1,130 @@
-/* General Styling */
+/* General Styles */
 body {
-  font-family: 'Josefin Sans', sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  line-height: 1.6;
-  color: #333;
-  background-color: #f9f9f9;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9fc;
 }
 
-h2, h3, h4 {
-  margin-bottom: 0.5rem;
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Navbar Styling */
-.navbar {
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+nav h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4b42f5;
 }
 
-.navbar-brand {
-  font-weight: bold;
-  font-size: 1.8rem;
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
 }
 
-.navbar-nav .nav-link {
-  color: #3f396d;
-  transition: color 0.3s;
+nav ul li {
+    font-size: 16px;
+    font-weight: 500;
+    color: #444;
+    cursor: pointer;
 }
 
-.navbar-nav .nav-link:hover {
-  color: #ff6f61;
+nav ul li:hover {
+    color: #4b42f5;
 }
 
-.c-btn {
-  background-color: #3f396d;
-  color: white;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s;
+.nav-contact {
+    background-color: #ffb100;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
 }
 
-.c-btn:hover {
-  background-color: #ff6f61;
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 10%;
+    background: linear-gradient(to right, #e9ebfe, #f9f9fc);
 }
 
-/* Home Section */
-.home {
-  background-color: #fff;
-  padding: 3rem 0;
+.hero h1 {
+    font-size: 48px;
+    font-weight: 800;
+    color: #4b42f5;
+    line-height: 1.2;
 }
 
-.home h2 {
-  font-size: 2.5rem;
-  color: #3f396d;
+.hero h1 span {
+    color: #ffb100;
 }
 
-.home h2 .c-orange {
-  color: #ff6f61;
+.hero p {
+    font-size: 18px;
+    color: #666;
+    margin: 20px 0;
 }
 
-.home p {
-  font-size: 1rem;
-  color: #555;
+.hero button {
+    background-color: #ffb100;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
 }
 
-.home img {
-  border-radius: 50%;
-  max-width: 100%;
+.hero button:hover {
+    background-color: #e09a00;
 }
 
-/* Expertise Section */
-.expertise {
-  padding: 3rem 0;
-  background-color: #f0f0f5;
+/* Hero Image */
+.hero img {
+    width: 400px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
-.expertise .heading small {
-  display: block;
-  color: #ff6f61;
-  text-transform: uppercase;
-  font-weight: 600;
-  margin-bottom: 1rem;
+/* Section Styles */
+section {
+    text-align: center;
+    padding: 80px 10%;
+    background-color: #f9f9fc;
 }
 
-.expertise .heading h3 {
-  color: #3f396d;
-  font-size: 1.8rem;
+section h2 {
+    font-size: 32px;
+    color: #4b42f5;
+    margin-bottom: 10px;
 }
 
-.service-card {
-  background: white;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  padding: 2rem;
-  text-align: center;
-  transition: transform 0.3s, box-shadow 0.3s;
+section p {
+    font-size: 18px;
+    color: #666;
+    margin: 0 auto;
+    max-width: 600px;
 }
 
-.service-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+/* Footer */
+footer {
+    background-color: #282046;
+    color: white;
+    padding: 20px 10%;
+    text-align: center;
 }
 
-.service-card .img img {
-  margin-bottom: 1rem;
-}
-
-.service-card h4 {
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
-}
-
-.service-card p {
-  font-size: 0.9rem;
-  color: #555;
-}
-
-/* Links */
-a {
-  text-decoration: none;
-  color: #3f396d;
-  transition: color 0.3s;
-}
-
-a:hover {
-  color: #ff6f61;
-}
-
-.link {
-  color: #ff6f61;
-  font-weight: bold;
-}
-
-.link:hover {
-  text-decoration: underline;
-}
-
-/* Button Styling */
-.c-btn.h-btn {
-  background-color: #ff6f61;
-  border: none;
-  color: #fff;
-}
-
-.c-btn.h-btn:hover {
-  background-color: #3f396d;
-}
-
-/* Responsive Design */
-@media screen and (max-width: 768px) {
-  .home h2 {
-    font-size: 2rem;
-  }
-
-  .expertise .heading h3 {
-    font-size: 1.5rem;
-  }
-
-  .service-card {
-    padding: 1.5rem;
-  }
+footer p {
+    font-size: 14px;
+    margin: 0;
 }
